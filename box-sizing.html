@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fuat Emanet">
+    <title>Box-Sizing</title>
+    <style>
+        #divcontentbox {
+            width:200px;
+            border:30px solid rgb(54, 102, 231);
+            padding:10px;
+            background-color:rgb(155, 216, 236);
+            box-sizing:content-box;
+            }
+        #divborderbox {
+            width:200px;
+            border:30px solid rgb(54, 102, 231);
+            padding:10px;
+            background-color:rgb(155, 216, 236);
+            box-sizing:border-box;
+            }
+
+
+
+    </style>
+</head>
+<body>
+        <!-- Kutu Modeli yapılırken tüm etiketlere border-box verilerek çalışılabilir. -->
+
+        <p>Aşağıdaki div'in genişliği 200px, padding'i 10px ve border 30 px'dir.
+        Eğer box-sizing "border box" olursa genişlik her zaman 200px olacaktır.
+        Ama box-sizing "content-box" olursa toplam genişlik = (width)+(border*2)+(padding*2) olacaktır.</p>
+        <div id="divcontentbox">Bu bir box-sizing:content-box 'dır.</div>
+        <br>
+        <div id="divborderbox">Bu bir box-sizing:border-box 'dır.</div>
+
+    
+</body>
+</html>
