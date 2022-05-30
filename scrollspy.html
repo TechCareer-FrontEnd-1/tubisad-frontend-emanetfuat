@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <title>Bootstrap</title>
+    <!-- Turkce karakter -->
+    <meta charset="utf-8">
+<!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- seo -->
+    <meta name="keywords" content="html5,css3,js,jquery,bootstrap,react,javase" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+    <!-- react libraries -->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <!-- start codes -->
+    <!-- Scrollspy, bir menüdeki veya gezinme çubuğundaki bağlantıları 
+        kaydırma konumuna göre otomatik olarak güncellemek için kullanılır.-->
+    
+    <nav class="navbar bg-light px-3 sticky-top" id="navbar-example-2">
+        <a href="#" class="navbar-brand">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#scrollspyHeading1" class="nav-link">First</a>
+            </li>
+            <li class="nav-item">
+                <a href="#scrollspyHeading2" class="nav-link">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" aria-expanded="false" role="button" data-bs-toggle="dropdown" class="nav-link dropdown-toggle">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#scrollspyHeading3" class="dropdown-item">Third</a></li>
+                    <li><a href="#scrollspyHeading4" class="dropdown-item">Fourth</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a href="#scrollspyHeading5" class="dropdown-item">Fifth</a></li>    
+                </ul>
+            </li>        
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" >
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate iusto exercitationem, asperiores accusantium cumque consequatur odio enim officiis corporis quis laborum nisi doloribus ipsam excepturi quos id eaque hic optio!
+        Doloribus delectus voluptatem quisquam nihil eum nesciunt. Ullam dicta quasi, delectus reprehenderit id cupiditate non reiciendis aut consequuntur suscipit, porro qui voluptates ipsa quae, molestias a. Sit tempora libero vitae.
+        Deserunt, voluptatibus magnam eius recusandae distinctio nobis, modi reprehenderit optio suscipit aliquid fuga? Illo sed explicabo maiores distinctio voluptatem aliquid dolorum atque, tenetur voluptates suscipit, debitis quos perferendis saepe asperiores!</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolor nemo totam doloremque, eos accusantium numquam quis? Fugiat vero consectetur incidunt omnis quos sequi expedita, distinctio at alias! Molestias, reiciendis!3</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt non nisi animi autem. Vero beatae ullam, aliquam veritatis fuga aut totam rem itaque commodi in nostrum quae eaque aliquid accusamus!
+        Fugiat magnam accusamus aliquid minus doloremque quisquam nisi et sed ratione similique, atque odio, error, enim aut perspiciatis maiores! Placeat sed magni commodi ducimus? Iusto iste neque tenetur dignissimos sint.
+        Nemo, omnis. Ipsam dolor optio corporis laboriosam odio veritatis molestias magnam cupiditate tempore eos doloribus nulla pariatur minus rerum sint magni, adipisci error, nam tenetur, voluptas non alias harum laborum?</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis vitae laboriosam commodi, esse tempora facere rem optio iusto? Nihil, inventore eos dolor aliquid cupiditate non corporis voluptatem facere culpa illum.
+        Corrupti a, reiciendis ipsam facere dolorem illum, asperiores laudantium voluptas magnam voluptates nam quae, quam odio vitae ratione quidem soluta maiores eveniet eius non ducimus corporis deleniti neque. Quaerat, iure.
+        Labore nulla cum ducimus quos ratione hic corrupti, nisi, qui similique ad quas omnis fugiat. Earum quidem sed ipsam illo qui, quos nostrum sit voluptatum molestiae tempora modi. Ad, nihil.</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem harum suscipit, amet quibusdam deserunt ut non reiciendis ab ipsum quos voluptates ullam molestiae magni totam soluta eveniet adipisci aperiam nesciunt!
+        Inventore odio veritatis laudantium ab officiis sapiente fugit at, facere recusandae magni aliquid non laborum reiciendis iure earum asperiores! Accusantium culpa dolore pariatur in eius porro vel officiis qui eaque?
+        Qui natus commodi eum amet consectetur aspernatur enim mollitia reprehenderit? In, fugit. Porro molestiae, id hic iure fuga maiores iste eveniet quod provident distinctio necessitatibus. Nesciunt iure natus quidem repellendus.</p>
+        
+    </div>
+
+
+
+    <!-- ends codes -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
