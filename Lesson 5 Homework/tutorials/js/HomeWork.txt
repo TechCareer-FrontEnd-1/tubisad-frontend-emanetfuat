@@ -1,0 +1,19 @@
+run time error - compiler error - syntax error
+
+
+ÖDEV -1
+// Kullanıcıda tarafından aldığımız 2 tane sayının
+// s1-) Bu sayılardan en küçüğü nedir ?
+// s2-) Bu sayılardan en büyüğü nedir ?
+// s3-) Bu sayılardan en büyüğü karekökü nedir ?
+// s4-) Bu sayılardan en büyüğü karekökünün üste yuvarlıyalım nedir ?
+// s5-) Bu sayılardan en küçüğü mutlak nedir ?
+// s6-) Bu sayılardan en küçüğü alt taban en büyüğü üst taban şeklinde üstünü alalım
+
+
+ÖDEV -2
+//if else 
+//Sayı bulma oyunu: 1-10 arasında rastgele sayılar olsun, bizde tahmin etmeye çalışalım. 
+bizim tahmin sayımız 5 olsun. Eğer biz sayıdan büyükse büyük tahmin eğer sayıdan küçükse küçük tahmin 
+ve sonunda eğer bulursak kaçıncı tahminde bulduğumuz bize söylesin ?
+
