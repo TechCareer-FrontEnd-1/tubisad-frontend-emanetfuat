@@ -1,0 +1,818 @@
+/* 
+Project Name: Mnt Technic
+Project Date: 20 Temmuz 2022
+Project Author: Fuat Emanet
+Project Version: V.1 
+*/
+/* ############################################################################ */
+/* Common Property */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background: #ffff;
+}
+
+html {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+    margin-left: 0.7rem;
+    margin-right: .7rem;
+}
+
+/* ############################################################################ */
+/* line-clamp */
+.line_clamp8 {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+/* ############################################################################ */
+/* nav */
+.navbar {
+    background: transparent;
+    min-height: 90px;
+}
+
+@media screen and (max-width:991px) {
+  .navbar {
+    background:rgb(3, 25, 41);
+    min-height: 90px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+} 
+}
+
+.navbar-scroll {
+    opacity: 0.9;
+    background:rgb(3, 25, 41);
+    min-height: 90px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+#navbar_id > ul > li > a{
+    color:#ffff;
+    
+}
+
+#navbar_id > ul > li > a:active{
+    color:#ED6E00;
+    
+}
+
+#navbar_id > ul > li > a:hover{
+    color:#ED6E00;
+    
+}
+
+#navbar_id ul > li > a {
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width:992px) {
+  .sub-menu {
+    position: absolute;
+    background-color: #fff;
+    width: 220px;
+    padding: 15px 15px;
+    margin: 0;
+    left: 0;
+    top: 50px;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0 0 20px #555555;
+    box-shadow: 0 0 20px #555555;
+    z-index: 1654;
+  }
+  
+  .sub-menu li {
+    display: block;
+    text-align: left;
+  
+  }
+  
+  .sub-menu li:last-child {
+    float: none !important;
+  
+  }
+  
+  .sub-menu li a {
+    color: #555;
+    font-weight: 600;
+    padding: 7px 10px;
+    font-size: 13px;
+  
+  }
+  
+  .sub-menu li:hover a {
+    color: #ED6E00;
+  
+  }
+}
+
+@media screen and (max-width:991px) {
+  .sub-menu li a{
+    color: #ffff;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 7px 10px;
+
+  }
+
+  .sub-menu li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .sub-menu li:hover a{
+    color: #ED6E00;
+
+  }
+}
+
+
+#navbar_id ul > li {
+  position: relative;
+}
+
+#navbar_id ul > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#right_navbar > btn-iso,
+a {
+  font-size: 1rem;
+}
+
+#right_navbar > a {
+  border: none;
+}
+
+#right_navbar > a > i{
+  color: #ffff;
+}
+
+#right_navbar > a > i:hover{
+  color: #ED6E00;
+}
+
+#login {
+    background: transparent;
+    border:none;
+    margin-right:20px;
+    color:#ffff;
+}
+
+#login:hover {
+    color:#ED6E00;
+}
+
+#check-div label {
+  color:#ffff;
+}
+
+#check-div label:hover {
+  color:#ED6E00;
+}
+
+#forgot-password {
+  color: #ffff;
+  font-size: 1rem;
+}
+
+#forgot-password:hover {
+  color: #ED6E00;
+}
+
+.inputUsernameValidation{
+  border: 2px solid red;
+}
+
+
+/* #right_navbar > #register:hover {
+    background: #4d9dd6;
+} */
+
+/* ############################################################################ */
+/* Slider */
+header {
+    z-index: -1;
+}
+
+@media screen and (min-width:576px) {
+  #header img {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width:575px) {
+  #header img {
+    height: 75vh;
+  }
+}
+
+/* #carouselExampleCaptions > .carousel-item > img {
+    height: 100vh !important;
+} */
+
+.carousel-control-prev > span {
+    color:#ffff;
+}
+.carousel-control-next > span {
+    color:#ffff;
+}
+
+/* ############################################################################ */
+/* Main */
+
+#hizmetlerimiz {
+    padding: 80px 0px 50px 0px;
+}
+
+@media screen and (min-width:992px) {
+    #hizmetlerimiz {
+        height: 100vh;
+        
+    }
+    
+}
+
+#hizmetlerimiz-icon-1 {
+    color:#ED6E00;
+}
+
+#hizmetlerimiz-icon-2 {
+    color:#ED6E00;
+}
+
+#hizmetlerimiz-icon-3 {
+    color:#ED6E00;
+}
+
+ /* HAKKIMIZDA */
+
+#hakkimizda {
+    background: url('./img/smart-home-3-gradient.jpg');
+    background-attachment: fixed;
+    color: #ffff;
+    text-align: center;
+}
+
+#hakkimizda h2 {
+    font-weight: 700;
+
+}
+
+@media screen and (min-width:992px) {
+    #hakkimizda {
+        height: 100vh;
+        /* padding: 300px 160px 50px 160px; */
+    }
+    
+    #hakkimizda > .container {
+      margin-top: 150px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    #hakkimizda {
+        padding: 70px 120px 50px 120px;
+    }
+    
+}
+
+@media screen and (min-width:576px) {
+    #hakkimizda {
+        padding: 80px 80px 50px 80px;
+    }
+    
+}
+
+@media screen and (min-width:0px) {
+    #hakkimizda {
+        padding: 80px 40px 50px 40px;
+    }
+    
+}
+
+#hakkimizda-btn{
+    border-color: #ED6E00;
+    color:#ffff;
+}
+
+#hakkimizda-btn:hover{
+    background: #ED6E00;
+}
+
+/* PROJELER-ISOTOPE */
+#projeler {
+    padding: 80px 0px 50px 0px;
+    min-height:700px;
+    margin-bottom: 200px;
+}
+
+#projeler h2 {
+    font-weight: 700;
+}
+
+#filters {
+    margin: 40px 0 20px 0 ;
+
+}
+
+.btn-iso {
+    display: inline-block;
+    padding: 0.7em 1.5em;
+    background: #ffff;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none !important;
+    margin-bottom: 5px;
+    margin-right: 1px;
+  }
+  
+  .btn-iso:hover {
+    background-color: #0d6efd;
+    color: #ffff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-iso:active,
+  .btn-iso.is-checked {
+    background-color: #0d6efd;
+    color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* .btn-iso.is-checked {
+    color: white;
+    text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  }
+  
+  .btn-iso:active {
+    box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+  } */
+  
+  /* ---- btn-iso-group ---- */
+  
+  .btn-iso-group {
+    margin-bottom: 20px;
+  }
+  
+  .btn-iso-group:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* .btn-iso-group .btn-iso {
+    border-radius: 5px;
+    margin-left: 0;
+    margin-right: 1px;
+  } */
+/*   
+  .btn-iso-group .btn-iso:first-child { border-radius: 0.5em 0 0 0.5em; }
+  .btn-iso-group .btn-iso:last-child { border-radius: 0 0.5em 0.5em 0; }
+   */
+  /* ---- isotope ---- */
+  
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* ---- .element-item ---- */
+  
+  .element-item {
+    position: relative;
+    float: left;
+    width: 25%;
+    /* height: 310px; */
+    color: #262524;
+    border: 10px solid #ffff;
+    overflow: hidden;
+  }
+
+  .element-item > a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .modal a {
+    font-size: 30px;
+    color: #ffff;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  @media screen and (min-width:0px) {
+    .element-item {
+        width: 100%;
+    }
+
+    .isotope-overlay h3 {
+        font-size:40px;
+    }
+  }
+
+  @media screen and (min-width:576px) {
+    .element-item {
+        width: 50%;
+    }
+
+    .isotope-overlay h3 {
+        font-size:30px;
+    }
+
+  }
+
+  @media screen and (min-width:768px) {
+    .element-item {
+        width: 33%;
+    }
+  }
+
+
+  @media screen and (min-width:992px) {
+    .element-item {
+        width: 25%;    
+    }
+  }
+
+  .element-item > img {
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  .element-item:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+	transform: scale(1.04);
+
+  }
+  
+  .element-item > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .isotope-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* top:-100%; */
+    top:0;
+    left:0;
+    color: #ffffff;
+    background: linear-gradient(to right, #ED6E00, #dc2430);
+    padding: 25% 0;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+
+
+  .element-item:hover .isotope-overlay {
+    opacity: 1;
+
+  }
+
+  .isotope-overlay h3 {
+    color:white;
+    text-align: center;
+    margin-top: 20%;
+    opacity: 0;
+    transition-duration: 0.7s;
+    transition-delay: 0.3s;
+    -moz-transition-duration: 0.7s;
+    -moz-transition-delay: 0.3s;
+    -webkit-transition-duration: 0.7s;
+    -webkit-transition-delay: 0.3s;
+  }
+
+  .element-item:hover .isotope-overlay h3 {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+
+  /* İSTATİSTİKLERİMİZ */
+  #istatistiklerimiz {
+    /* background: linear-gradient(to bottom, rgba(9, 54, 122, 0.8), rgba(3, 25, 41,.8)); */
+    background: rgba(3, 25, 41, .9);
+    padding: 120px 0px 80px 0px;
+
+  }
+
+  #istatistiklerimiz h3 {
+    font-weight: 700;
+    color: #ffff;
+    text-align: center;
+  }
+
+  #istatistiklerimiz span {
+    color: #c9a91b;
+  }
+
+  #istatistiklerimiz p {
+    color: #ED6E00;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  @media screen and (min-width:992px) {
+      #istatistiklerimiz {
+          height: 400px;
+          
+      }
+      
+  }
+
+  #istatistiklerimiz-icon-1 {
+      color:#ffff;
+  }
+
+  #istatistiklerimiz-icon-2 {
+      color:#ffff;
+  }
+
+  #istatistiklerimiz-icon-3 {
+      color:#ffff;
+  }
+
+  #istatistiklerimiz-icon-4 {
+      color:#ffff;
+  }
+
+  #istatistiklerimiz-icon-5 {
+      color:#ffff;
+  }
+
+  #istatistiklerimiz-icon-6 {
+      color:#ffff;
+  }
+
+  /* BLOG */
+
+  #blog {
+    padding: 150px 50px 150px 50px;
+  }
+
+  #blog h3 {
+    margin-left: 10px;
+  }
+  
+  #blog span {
+    margin-left: 10px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #ED6E00;
+    border-color: #ED6E00 ;
+    float: left;
+  }
+  
+  #blog span::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  #blog h4 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .div-image {
+    padding: 20px 20px 20px 20px;
+  }
+
+  .div-image img {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+  }
+
+  @media screen and (min-width:992px) {
+    .div-image {
+      padding: 80px 50px 20px 50px;
+    }
+  }
+
+
+  /* TESTIMONIALS */
+
+  #testimonials {
+    background: url('./img/smart-home-3-gradient.jpg');
+    background-attachment: fixed;
+    height: auto;
+    text-align: center;
+    padding: 100px 100px 20px 100px;
+  }
+
+  #testimonials p {
+    text-align: center;
+    color: #ffff;
+    padding: 0px 200px 0px 200px;
+    margin: 30px 0px 30px 0px;
+
+  }
+
+  @media screen and (max-width:991px) {
+    #testimonials p {
+      padding: 0px 100px 0px 100px;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    #testimonials p {
+      padding: 0px 50px 0px 50px;
+    }
+  }
+ 
+  @media screen and (max-width:575px) {
+      #testimonials {
+        padding: 100px 10px 20px 10px;
+
+      }
+
+    #testimonials p {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  #testimonials h3 {
+    text-align: center;
+    color: #ED6E00;
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  #testimonials h4 {
+    text-align: center;
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+  #testimonials button {
+    text-align: center;
+    color: #ffff;
+  }
+
+  #testimonials .carousel-item {
+    margin-bottom: 70px;
+  }
+
+  #testimonials-icon {
+    color: #ED6E00;
+  }
+
+
+  /* İLETİŞİM */
+
+  #iletisim {
+    text-align: center;
+    height:auto;
+    padding: 80px 0px 80px 0px;
+
+  }
+
+  @media screen and (max-width:767px) {
+    #left-column {
+      padding-left: 35%;
+    }
+  }
+ 
+  @media screen and (max-width:575px) {
+    #left-column {
+      padding-left: 40%;
+    }
+  }
+ 
+  @media screen and (max-width:400px) {
+    #left-column {
+      padding-left: 35%;
+    }
+  }
+  
+
+  .iletisim-icon {
+    font-size: 30px;
+    color: #ED6E00;
+    float: left;
+  }
+ 
+  .iletisim-icon:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+  #iletisim input , #iletisim textarea {
+    border: none;
+    border-bottom: 1px solid rgb(15, 15, 15);
+    border-radius: 0;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #iletisim textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+ 
+  .btn-gonder {
+    cursor: pointer;
+    background: #0d6efd;
+    padding: 12px 45px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #ffff;
+    border: none;
+    margin-top: 30px;
+  }
+
+  /* MARKALARIMIZ */
+  #markalarimiz {
+    display: none;
+  }
+
+
+  /* FOOTER */
+
+  footer .container-fluid {
+    background: rgba(3, 25, 41, .9);
+    padding: 20px 0px 20px 0px; 
+   }
+
+   /* Back to Top */
+#back_top {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding:15px 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #0d6efd;
+  color: #ffff;
+  z-index: 1234;
+}
+
+#back_top i {
+  font-size: 20px;
+  transition: all 0.8s;
+
+}
+
+#back_top:hover i {
+  font-size: 20px;
+  transform: translate(0,-10px);
+
+}
+
+#back_top:hover {
+  background: transparent;
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+}
